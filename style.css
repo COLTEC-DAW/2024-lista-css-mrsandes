@@ -1,0 +1,97 @@
+.color1 {
+    color: #82c1da;
+}
+
+.color2 {
+    color: #b3e5e5;
+}
+
+.color3 {
+    color: #091e2d;
+}
+
+.color4 {
+    color: #747a7e;
+}
+
+.color5 {
+    color: #e5e5e5;
+}
+
+/* #000000
+#1a1a1a
+#333333
+#4d4d4d
+#666666
+#808080
+#999999
+#b3b3b3
+#cccccc
+#e6e6e6
+#f0f0f0
+#ffffff */
+
+body {
+    width: 60ch;
+    margin: 0 auto;
+    background: #e6e6e6;
+    color: #1a1a1a;
+    font-family: sans-serif;
+}
+
+p {
+    width: 60ch;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+a {
+    color: #82c1da;
+}
+
+abbr {
+    color: #747a7e;
+    font-variant: small-caps;
+}
+
+h1,
+h2,
+h3 {
+    color: #091e2d;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+li {
+    list-style: none;
+}
+
+li a {
+    color: #1a1a1a;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: #1a1a1a;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
