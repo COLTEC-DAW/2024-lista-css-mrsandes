@@ -1,97 +1,112 @@
-.color1 {
-    color: #82c1da;
+:root {
+    --cor-0: #ffffff;
+    --cor-1: #f7f7f7;
+    --cor-2: #fdfdfd;
+    --cor-3: #dedede;
+    --cor-4: #cccccc;
+    --cor-5: #b2b2b2;
+    --cor-6: #9c9c9c;
+    --cor-7: #717171;
+    --cor-8: #595959;
+    --cor-9: #404040;
+    --cor-10: #2e2e2e;
+    --cor-11: #111111;
+    --cor-12: #000000;
+    --cor-a1: #ffbb00;
+    --cor-a2: #e4a30b;
+    --cor-a3: #a66f00;
+    --cor-a4: #664400;
+    --cor-a5: #332200;
 }
-
-.color2 {
-    color: #b3e5e5;
-}
-
-.color3 {
-    color: #091e2d;
-}
-
-.color4 {
-    color: #747a7e;
-}
-
-.color5 {
-    color: #e5e5e5;
-}
-
-/* #000000
-#1a1a1a
-#333333
-#4d4d4d
-#666666
-#808080
-#999999
-#b3b3b3
-#cccccc
-#e6e6e6
-#f0f0f0
-#ffffff */
 
 body {
-    width: 60ch;
-    margin: 0 auto;
-    background: #e6e6e6;
-    color: #1a1a1a;
     font-family: sans-serif;
-}
-
-p {
-    width: 60ch;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 4px;
-    font-size: 1em;
-}
-
-a {
-    color: #82c1da;
-}
-
-abbr {
-    color: #747a7e;
-    font-variant: small-caps;
+    margin: 0;
 }
 
 h1,
 h2,
 h3 {
-    color: #091e2d;
     text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
 }
 
 h1 {
     font-size: 1.8em;
 }
 
-h2 {
+h1 {
     font-size: 1.4em;
 }
 
-h3 {
+h1 {
     font-size: 1.2em;
 }
 
-li {
-    list-style: none;
+/* define a largura para a pagina inteira nos p's pois 
+   caso definisse no boddy - que é o corrteto - a pági
+   na ficaria estranha */
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    width: 150ch;
+    margin: 0 auto;
+    padding: 20px;
+    font-weight: 600;
 }
 
-li a {
-    color: #1a1a1a;
+a {
+    text-decoration: none;
+    color: var(--cor-a1);
 }
 
-footer {
+abbr {
+    text-decoration: none;
+    color: var(--cor-a3);
+    font-variant: small-caps;
+}
+
+footer,
+header {
+    background: var(--cor-12);
+    color: var(--cor-a1);
+    box-sizing: border-box;
+    padding: 50px;
     text-align: center;
 }
 
-footer a {
-    color: #1a1a1a;
+.summary {
+    text-align: center;
+}
+
+.preamble,
+.participation,
+.requirements {
+    background: var(--cor-11);
+    color: var(--cor-3);
 }
 
 .wrapper {
+    width: 100ch;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+.design-selection,
+.design-archives,
+.zen-resources {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li + li {
+    margin-top: 10px;
 }
