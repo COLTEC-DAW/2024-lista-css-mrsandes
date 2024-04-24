@@ -1,0 +1,55 @@
+body {
+    width: 80%;
+    max-width: 1280px;
+}
+
+.intro {
+    min-height: 550px;
+}
+
+#design-archives {
+    display: none;
+}
+
+.intro header {
+    margin-left: 1em; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+ul {
+    list-style: none;
+}
+
+li + li {
+    margin-top: 1.125em;
+}
+
+.wrapper a {
+    border: 2px solid var(--cor-a1);
+    padding: 0.5em;
+    text-align: center;
+}
+
+.wrapper {
+    margin: 4%;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: 1px solid var(--cor-a1);
+    padding-right: 2%;
+}
+
+.design-selection {
+    position: absolute;
+    top: 580px;
+    left: 65%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
