@@ -1,4 +1,7 @@
+@import "T1T2.css";
 @import "T3T4.css";
+
+/* estilos gerais da página */
 
 :root {
     --cor-0: #ffffff;
@@ -22,11 +25,7 @@
 }
 
 body {
-    font-family: sans-serif;
     margin: 0 auto;
-    width: 80%;
-    max-width: 1280px;
-    background: var(--cor-12);
 }
 
 div {
@@ -44,7 +43,6 @@ h3 {
 
 p {
     font-size: 1em;
-    line-height: 1.5;
     margin: 0;
     padding: 20px;
     font-weight: 600;
